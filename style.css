@@ -11,6 +11,13 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+ul {
+    width: 250px;
+    border: 7px solid orangered;
+    padding: 50px;
+    margin: 5px;
+}
+
 /* center the title */
 
 /* create box for the todo list */
