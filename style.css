@@ -28,6 +28,21 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+.container {
+    height: 100px;
+    position: relative;
+    border: 3px;
+  }
+  
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
 /* center the title */
