@@ -4,6 +4,7 @@ body {
 
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
 
 }
 
@@ -17,6 +18,17 @@ ul {
     padding: 50px;
     margin: 5px;
 }
+
+button {
+    background-color: orangered; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
 
 /* center the title */
 
