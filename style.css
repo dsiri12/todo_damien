@@ -45,6 +45,11 @@ button {
     transform: translate(-50%, -50%);
   }
 
+  .todoitem {
+    display: flex;
+    justify-content: space-between
+  }
+
 /* center the title */
 
 /* create box for the todo list */
