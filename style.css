@@ -13,10 +13,14 @@ p {
 }
 
 ul {
-    width: 250px;
+    width: 350px;
+    height: 150px;
     border: 7px solid orangered;
     padding: 50px;
-    margin: 5px;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
 
 button {
