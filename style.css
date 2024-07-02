@@ -5,7 +5,6 @@ body {
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-
 }
 
 p {
@@ -15,7 +14,8 @@ p {
 ul {
     width: 350px;
     height: 150px;
-    border: 7px solid orangered;
+    border: 10px solid orange;
+    background-color: white;
     padding: 50px;
     margin: 50px;
     margin-left: auto;
@@ -24,7 +24,7 @@ ul {
 }
 
 button {
-    background-color: orangered;
+    background-color: orange;
     border: none;
     color: white;
     padding: 5px 15px;
