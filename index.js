@@ -1,103 +1,51 @@
-console.log("Hello World");
-const todoList = []
-const saveTodo = window.localStorage.getItem('todoitem')
-todoList.join(JSON.parse(saveTodo))
-console.log(saveTodo)
-let todoitems=document.getElementById('todoitems');
+// d
 
-for (let i = 0; i < JSON.parse(saveTodo).length; i++) {
-    let saveTodoItem = document.createElement('li');
-    let saveTodoItemText = document.createElement('p')
-    let saveCheckTodo = document.createElement('input')
+// type in todo item that the user wants to add in his/her todo list app
+// the todo item gets added to todo list box
+// clicking on the Add button will add todo item to todo item box
 
-    saveTodoItemText.textContent = JSON.parse(saveTodo)[i]
-    saveTodoItem.classList.add('todoitem')
-    saveCheckTodo.setAttribute('type', 'checkbox')
-    saveTodoItem.appendChild(saveTodoItemText)
-    saveTodoItem.appendChild(saveCheckTodo)
-    console.log(todoitems)
-    todoitems.appendChild(saveTodoItem)
+// gathering the value of the name of todo item by its id
+// creating the todo item (li) in particular that we're adding
+// creating the name of the todo item (p) being displayed in todo box
+// creating the checkbox next to the name of the todo item in todo item box
+// style elements using classList
+// set attribute to the input (type = checkbox)
+// append child, append the p tag into the li
+// append child, append the input into the li
+// append child, append the li into the ul
+
+
+
+function addTodo() {
+    var a = document.querySelector(".container")
+
+    var todoItem = document.getElementById("li").value = "";
+
+    var todoItem = document.createElement("li")
+    var todoItemText = document.createElement("p")
+    var checkBox = document.createElement("input")
+
+    a.classList.add("li", "p", "input")
+    a.classList.remove("input")
+
+    a.setAttribute("type", "checkbox")
+
+    todoItem.appendChild("todoItemText")
+    todoItem.appendChild("checkBox")
+    todoItems.appendChild("todoItem")
 }
 
-function addTodo(){
-    let text=document.getElementById('addTodo').value;
-    todoList.push(text)
-    window.localStorage.setItem('todoitem', JSON.stringify(todoList))
-    
-    console.log(todoList)
 
-    let todoitem = document.createElement('li');
-    let todoItemText = document.createElement('p')
-    
-    let checkTodo = document.createElement('input')
 
-    todoItemText.textContent = text
-    todoitem.classList.add('todoitem')
-    checkTodo.setAttribute('type', 'checkbox')
-    
 
-    todoitem.appendChild(todoItemText)
-    todoitem.appendChild(checkTodo)
-    todoitems.appendChild(todoitem)
-    document.getElementById("addTodo").value = "";
-}
 
-//  create new function
+let a = document.querySelector(".container")
 
-//  create variable that saves whatever value that is inside of this function
+a.classList.add("todoitem1", "checkbox1", "todoitembox1")
 
-//  log this function
+a.classList.remove("todoitembox1", "todoitem1")
 
-function deleteTodo(){
-    let text=document.getElementById('deleteTodo').value;
-    console.log(text);
-}
+a.setAttribute("phone", "device")
 
-// lines of code that possibly connect with the addTodo function and the for loop function
+console.log(a)
 
-// console.log("Hello World");
-// const todoList = []
-// const saveTodo = window.localStorage.getItem('todoitem)
-// todoList.join(JSON.parse(saveTodo))
-// console.log(saveTodo)
-// let todoitems=document.getElementById('todoitems);
-
-// the addTodo function that was done this past Monday
-
-// function addTodo(){
-//      let text=document.getElementById('addTodo').value;
-//      todoList.push(text)
-//      window.localStorage.setItem('todoitem', JSON.stringify(todoList))
-
-//      console.log(todoList)
-
-//      let todoitem = document.createElement('li');
-//      let todoItemText = document.createElement('p')
-
-//      let checkTodo = document.createElement('p');
-
-//      todoItemText.textContent = text
-//      todoitem.classList.add('todoitem')
-//      checkTodo.setAttribute('type', 'checkbox')
-
-//      todoitem.appendChild(todoItemText)
-//      todoitem.appendChild(checkTodo)
-//      todoitems.appendChild(todoitem)
-//      document.getElementById("addTodo").value = "";
-// }
-
-// the for loop function that was done yesterday being a Wednesday which was this past Wednesday
-
-// for () {
-//      let saveTodoItem = document.createElement('li');
-//      let saveTodoItemText = document.createElement('p')
-//      let saveCheckTodo = document.createElement('input')
-
-//      saveTodoItemText.textContent = JSON.parse(saveTodo)[i]
-//      saveTodoItem.classList.add('todoitem')
-//      saveCheckTodo.setAttribute('type', 'checkbox')
-//      saveTodoItem.appendChild(saveTodoItemText)
-//      saveTodoItem.appendChild(saveCheckTodo)
-//      console.log(todoitems)
-//      todoitems.appendChild(saveTodoItem)
-// }
