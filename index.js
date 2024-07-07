@@ -16,23 +16,33 @@
 
 
 
+
+
+var todoitems=document.getElementById('todoitems');
+
 function addTodo() {
-    var a = document.querySelector(".container")
+    // var a = document.querySelector(".container")
 
-    var todoItem = document.getElementById("li").value = "";
-
+    // var todoItem = document.getElementById("li").value = "";
+    var text = document.getElementById("addTodo").value;
+    
     var todoItem = document.createElement("li")
     var todoItemText = document.createElement("p")
-    var checkBox = document.createElement("input")
+    var checkTodo = document.createElement("input")
 
-    a.classList.add("li", "p", "input")
-    a.classList.remove("input")
+    todoItemText.textContent = text
 
-    a.setAttribute("type", "checkbox")
+    // a.classList.add("li", "p", "input")
+    // a.classList.remove("input")
+    todoitem.classList.add("todoitem")
+
+    // a.setAttribute("type", "checkbox")
+    checkTodo.setAttribute("type", "checkbox")
 
     todoItem.appendChild("todoItemText")
     todoItem.appendChild("checkBox")
     todoItems.appendChild("todoItem")
+    document.getElementById("addTodo").value = "";
 }
 
 
