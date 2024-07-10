@@ -18,7 +18,7 @@
 
 
 
-var todoitems=document.getElementById('todoitems');
+var todoItems=document.getElementById('todoitems');
 
 function addTodo() {
     // var a = document.querySelector(".container")
@@ -34,19 +34,34 @@ function addTodo() {
 
     // a.classList.add("li", "p", "input")
     // a.classList.remove("input")
-    todoitem.classList.add("todoitem")
+    todoItem.classList.add("todoitem")
 
     // a.setAttribute("type", "checkbox")
     checkTodo.setAttribute("type", "checkbox")
 
-    todoItem.appendChild("todoItemText")
-    todoItem.appendChild("checkBox")
-    todoItems.appendChild("todoItem")
+    todoItem.appendChild(todoItemText)
+    todoItem.appendChild(checkTodo)
+    todoItems.appendChild(todoItem)
     document.getElementById("addTodo").value = "";
 }
 
+function removeTodo(todoItem) {
+    var markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked');
+    console.log(markedCheckbox);
+    // loop through all the marked checkboxes
+    for (var checkbox of markedCheckbox) {
+        // how to get element's parent
+        // remove parent element
+    }
+}
 
+// click on checkbox next to todo item I want to delete/remove
+// select list item
+// remove item from dom
+// click delete button
+// todo item that I want to delete/remove will go away
 
+// how to get inputs that are checked in javascript
 
 
 let a = document.querySelector(".container")
@@ -58,4 +73,5 @@ a.classList.remove("todoitembox1", "todoitem1")
 a.setAttribute("phone", "device")
 
 console.log(a)
+
 
