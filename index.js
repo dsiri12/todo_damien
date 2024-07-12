@@ -52,14 +52,16 @@ function removeTodo(todoItem) {
     console.log(markedCheckbox);
     // loop through all the marked checkboxes
     for (var checkbox of markedCheckbox) {
-        checkbox.appendChild('markedCheckbox')
+        // checkbox.appendChild('markedCheckbox')
+        // checkbox.classList.remove("markedCheckbox")
 
         // how to get element's parent
-        var checkbox=document.getElementById('input');
+        var markedCheckbox=document.getElementById('input[type="checkbox"]:checked');
 
         // remove parent element
         checkbox.classList.remove("markedCheckbox")
-        document.getElementById('checkbox').value = "";
+        // document.getElementById('checkbox').value = "";
+        // removeChild(checkbox)
     }
 }
 
