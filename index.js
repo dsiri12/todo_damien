@@ -46,12 +46,20 @@ function addTodo() {
 }
 
 function removeTodo(todoItem) {
+    // todoItem.classList.remove("todoitem")
+
     var markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked');
     console.log(markedCheckbox);
     // loop through all the marked checkboxes
     for (var checkbox of markedCheckbox) {
+        checkbox.appendChild('markedCheckbox')
+
         // how to get element's parent
+        var checkbox=document.getElementById('input');
+
         // remove parent element
+        checkbox.classList.remove("markedCheckbox")
+        document.getElementById('checkbox').value = "";
     }
 }
 
