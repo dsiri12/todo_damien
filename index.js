@@ -46,6 +46,7 @@ function addTodo() {
 }
 
 function removeTodo(todoItem) {
+    // var todoItem=document.getElementById('todoitem')
     // todoItem.classList.remove("todoitem")
 
     var markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked');
@@ -62,6 +63,7 @@ function removeTodo(todoItem) {
         checkbox.classList.remove("markedCheckbox")
         // document.getElementById('checkbox').value = "";
         // removeChild(checkbox)
+        // document.getElementById("todoItem").value = " ";
     }
 }
 
