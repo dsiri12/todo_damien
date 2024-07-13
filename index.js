@@ -45,22 +45,41 @@ function addTodo() {
     document.getElementById("addTodo").value = "";
 }
 
-function removeTodo(todoItem) {
+function removeTodo() {
     // var todoItem=document.getElementById('todoitem')
     // todoItem.classList.remove("todoitem")
 
-    var markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked');
-    console.log(markedCheckbox);
+    const markedCheckbox = document.querySelectorAll('input[type="checkbox"]');
+
+
     // loop through all the marked checkboxes
-    for (var checkbox of markedCheckbox) {
+    for (let checkbox of markedCheckbox) {
         // checkbox.appendChild('markedCheckbox')
         // checkbox.classList.remove("markedCheckbox")
 
         // how to get element's parent
-        var markedCheckbox=document.getElementById('input[type="checkbox"]:checked');
-
+        console.log(checkbox);
+        // if (checkbox.checked) {
+        //     checkbox.parentElement.style.textDecoration = "line-through";
+        // } else {
+        //     checkbox.parentElement.style.textDecoration = "";
+        // }
         // remove parent element
-        checkbox.classList.remove("markedCheckbox")
+        
+
+        // add new style or class to parent element to showcase the check
+
+        // add class instead of updating style to line through
+        // update color of text for todo item that is being removed
+
+        if (checkbox.checked) {
+            checkbox.classList.add("text-decoration: line-through")
+            checkbox.parentElement.style.color = "red";
+        } else {
+            checkbox.parentElement.style.color = "black";
+        }
+
+
         // document.getElementById('checkbox').value = "";
         // removeChild(checkbox)
         // document.getElementById("todoItem").value = " ";
