@@ -1,5 +1,3 @@
-// d
-
 // type in todo item that the user wants to add in his/her todo list app
 // the todo item gets added to todo list box
 // clicking on the Add button will add todo item to todo item box
@@ -17,92 +15,60 @@
 
 
 
+// gathering the value of the todo items by their id
+let todoItems = document.getElementById("todoitems");
 
-var todoItems=document.getElementById('todoitems');
-
+// the function that is supposed to be able to effectively add a todo item that I want to add to my todo list page
 function addTodo() {
-    // var a = document.querySelector(".container")
 
-    // var todoItem = document.getElementById("li").value = "";
-    var text = document.getElementById("addTodo").value;
+    // gathering the value of what is typed into the text area that has the todo item
     
-    var todoItem = document.createElement("li")
-    var todoItemText = document.createElement("p")
-    var checkTodo = document.createElement("input")
+    
+    // creating an element of a todo item using the li
+    
 
-    todoItemText.textContent = text
+    // creating an element of the todo item text using the p tag
+    
 
-    // a.classList.add("li", "p", "input")
-    // a.classList.remove("input")
-    todoItem.classList.add("todoitem")
+    // creating a check todo by using the input tag
+    
 
-    // a.setAttribute("type", "checkbox")
-    checkTodo.setAttribute("type", "checkbox")
+    // setting the content of the todo item text to the value of text area
+    
 
-    todoItem.appendChild(todoItemText)
-    todoItem.appendChild(checkTodo)
-    todoItems.appendChild(todoItem)
-    document.getElementById("addTodo").value = "";
+    // adding a class name called todoitem to the todo item from the classList property that is being accessed
+    
+
+    // setting attribute to the check todo to 'type = checkbox'
+   
+
+    // appending the todoItemText(p) to the todoItem(li)
+    
+
+    // appending the checkTodo(checkbox) to the todoItem(li)
+   
+    // appending the todoItem(li) to the todoItems(ul)
+    
+
+    // gathering the element of addTodo by it's id to then pass a value of an empty string at the end in order to clear out the text area for adding any todo item in the todo list
+   
 }
 
+// the function that is supposed to be able to remove any todo item in particular that I'd want to check off and delete/remove
 function removeTodo() {
-    // var todoItem=document.getElementById('todoitem')
-    // todoItem.classList.remove("todoitem")
-
-    const markedCheckbox = document.querySelectorAll('input[type="checkbox"]');
-
+    // gathering any checkboxes for any todo item that are marked
+    
 
     // loop through all the marked checkboxes
-    for (let checkbox of markedCheckbox) {
-        // checkbox.appendChild('markedCheckbox')
-        // checkbox.classList.remove("markedCheckbox")
-
-        // how to get element's parent
-        console.log(checkbox);
-        // if (checkbox.checked) {
-        //     checkbox.parentElement.style.textDecoration = "line-through";
-        // } else {
-        //     checkbox.parentElement.style.textDecoration = "";
-        // }
-        // remove parent element
-        
-
-        // add new style or class to parent element to showcase the check
-
-        // add class instead of updating style to line through
-        // update color of text for todo item that is being removed
-
-        if (checkbox.checked) {
-            checkbox.classList.add("text-decoration: line-through")
-            checkbox.parentElement.style.color = "red";
+    for () {
+        // a case if the checkbox for any todo item is marked
+        if () {
+            // a disabled-todo class will be applied to any todo item that is marked from it's checkbox being marked to show that it is deleted right after the delete button is clicked
+            
+        // an alternative case if any checkbox for any todo item is unmarked
         } else {
-            checkbox.parentElement.style.color = "black";
+            // the disabled-todo class will be reverted from being applied to any todo item that has its checkbox marked before of right after its checkbox is unmarked right after the delete button is clicked
+            
         }
-
-
-        // document.getElementById('checkbox').value = "";
-        // removeChild(checkbox)
-        // document.getElementById("todoItem").value = " ";
     }
 }
-
-// click on checkbox next to todo item I want to delete/remove
-// select list item
-// remove item from dom
-// click delete button
-// todo item that I want to delete/remove will go away
-
-// how to get inputs that are checked in javascript
-
-
-let a = document.querySelector(".container")
-
-a.classList.add("todoitem1", "checkbox1", "todoitembox1")
-
-a.classList.remove("todoitembox1", "todoitem1")
-
-a.setAttribute("phone", "device")
-
-console.log(a)
-
-

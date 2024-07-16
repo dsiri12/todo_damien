@@ -12,6 +12,11 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.disabled-todo {
+  color: orangered;
+  text-decoration: line-through;
+}
+
 ul {
     width: 350px;
     height: 150px;
