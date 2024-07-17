@@ -34,7 +34,7 @@ function addTodo() {
     let checkTodo = document.createElement("input");
 
     // setting the content of the todo item text to the value of text area
-    todoItem.textContent = text;
+    todoItemText.textContent = text;
 
     // adding a class name called todoitem to the todo item from the classList property that is being accessed
     todoItem.classList.add("todo-item");
@@ -63,13 +63,13 @@ function removeTodo() {
     // loop through all the marked checkboxes
     for (checkbox of markedCheckbox) {
         // a case if the checkbox for any todo item is marked
-        if (checkbox === markedCheckbox) {
+        if (markedCheckbox == 'true') {
             // a disabled-todo class will be applied to any todo item that is marked from it's checkbox being marked to show that it is deleted right after the delete button is clicked
-            document.parentElement.classList.add("disabled-todo")
+            text = document.parentElement.classList.add("disabled-todo")
         // an alternative case if any checkbox for any todo item is unmarked
         } else {
             // the disabled-todo class will be reverted from being applied to any todo item that has its checkbox marked before of right after its checkbox is unmarked right after the delete button is clicked
-            document.parentElement.classList.remove("disabled-todo")
+            text = document.parentElement.classList.remove("disabled-todo")
         }
     }
 }
