@@ -65,11 +65,11 @@ function removeTodo() {
         // a case if the checkbox for any todo item is marked
         if (markedCheckbox == 'true') {
             // a disabled-todo class will be applied to any todo item that is marked from it's checkbox being marked to show that it is deleted right after the delete button is clicked
-            todoItemText = document.parentElement.classList.add("disabled-todo")
+            document.parentElement.classList.add("disabled-todo") = todoItem;
         // an alternative case if any checkbox for any todo item is unmarked
         } else {
             // the disabled-todo class will be reverted from being applied to any todo item that has its checkbox marked before of right after its checkbox is unmarked right after the delete button is clicked
-            todoItemText = document.parentElement.classList.remove("disabled-todo")
+            document.parentElement.classList.remove("disabled-todo") = todoItem;
         }
     }
 }
