@@ -56,8 +56,9 @@ button {
     transform: translate(-50%, -50%);
   }
 
-  .todoitem {
+  .todo-item {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 

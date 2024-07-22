@@ -58,18 +58,19 @@ function addTodo() {
 // the function that is supposed to be able to remove any todo item in particular that I'd want to check off and delete/remove
 function removeTodo() {
     // gathering any checkboxes for any todo item that are marked
-    const markedCheckbox = document.querySelectorAll(input = ['checkbox:checked']);
+    const markedCheckbox = document.querySelectorAll('input:checked');
 
     // loop through all the marked checkboxes
     for (checkbox of markedCheckbox) {
         // a case if the checkbox for any todo item is marked
-        if (markedCheckbox == 'true') {
-            // a disabled-todo class will be applied to any todo item that is marked from it's checkbox being marked to show that it is deleted right after the delete button is clicked
-            document.parentElement.classList.add("disabled-todo") = todoItem;
+        if (checkbox.checked) {
+            // add the disabled-todo class to any todo item that isn't marked so then it is marked
+            checkbox.parentElement.classList.add("disabled-todo");
         // an alternative case if any checkbox for any todo item is unmarked
+        console.log(checkbox.parentElement);
         } else {
-            // the disabled-todo class will be reverted from being applied to any todo item that has its checkbox marked before of right after its checkbox is unmarked right after the delete button is clicked
-            document.parentElement.classList.remove("disabled-todo") = todoItem;
+            // remove the disabled-todo class from any todo item that has its checkbox marked so then it is unmarked
+            checkbox.parentElement.classList.remove("disabled-todo");
         }
     }
 }
